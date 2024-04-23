@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    hostname: mongo
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+      - MONGO_INITDB_ROOT_PASSWORD=secret
+    ports:
+      - "27017:27017"
+    volumes:
+      - VOL1:/data/db
+    networks:
+      - NET1
+
+networks:
+  NET1:
+
+volumes:
+  VOL1:
