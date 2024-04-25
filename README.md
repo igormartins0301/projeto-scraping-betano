@@ -34,7 +34,7 @@ venv/scripts/activate
 4. Instale as dependencias do projeto:
 
 ```bash
-pip install --upgrade pip
+python.exe -m pip install --upgrade pip
 
 pip install -r requirements.txt
 ```
