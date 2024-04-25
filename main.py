@@ -1,5 +1,6 @@
 from betCrawler.Browser.betanoCr import BetanoBrowser
 from betCrawler.saveDatabase.mongoCr import MongoConnection
+import pandas as pd
 
 def main():
     # Configurações para exibir todas as linhas e colunas do DataFrame
